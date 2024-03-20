@@ -3,102 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: 'Times', 'Times New Roman', Times, serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-    header {
-        background-color: #333;
-        color: #E4AF07;
-        padding: 2px;
-        text-align: center;
-    }
-
-    .produtos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 20px;
-    }
-
-    .produto {
-        width: 300px;
-        margin: 20px;
-        padding: 10px;
-        border: 3px solid #E4AF07;
-        text-align: center;
-        border-radius: 20px; /* Adiciona bordas arredondadas */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    }
-
-    .produto img {
-        width: 100%;
-        max-height: 200px;
-        object-fit: cover;
-        border-radius: 8px; /* Adiciona bordas arredondadas */
-    }
-
-    .preco {
-        display: block;
-        margin: 10px 0;
-        color: #333;
-        font-weight: bold;
-    }
-
-    button {
-        background-color: #E4AF07;
-        color: #333;
-        padding: 8px 16px;
-        border: none;
-        border-radius: 5px; /* Adiciona bordas arredondadas */
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-        background-color: #555;
-    }
-
-    .informacoes-contato {
-        display: none;
-        text-align: center;
-        margin-top: 20px;
-        padding: 20px;
-        background-color: #f0f0f0;
-        border: 1px solid #ccc;
-        border-radius: 10px; /* Adiciona bordas arredondadas */
-    }
-
-    footer {
-        background-color: #333;
-        color: #fff;
-        text-align: center;
-        padding: 1px;
-        position: flex;
-        bottom: 0;
-        width: 100%;
-    }
-
-    </style>
-    <link rel="icon" href="images/escudo_hf-removebg-preview.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagens/escudo_hf-removebg-preview.png"/>
     <title>Loja Hérois da Fé</title>
 </head>
 <body>
-
+    <section>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
     <header>
-        <span><img src="images/escudo_hf-removebg-preview.png" alt="" height="100px"></span>
-        <span><img src="images/iconeumademb-removebg-preview.png" alt="" height="100px"></span>
+        <span><img src="imagens/escudo_hf-removebg-preview.png" alt="" height="100px"></span>
+        <span><img src="imagens/iconeumademb-removebg-preview.png" alt="" height="100px"></span>
         <h1>Loja Hérois da Fé</h1>
         <h3>Magalhães Barata</h3>
     </header>
 
     <section class="produtos">
         <article class="produto">
-            <img src="imagem_produto1.jpg" alt="Produto 1">
+            <img src="imagens/camisateste.webp" alt="Produto 1">
             <h2>Produto 1</h2>
             <p>Descrição do Produto 1.</p>
             <span class="preco">R$49,99</span>
@@ -106,7 +30,55 @@
         </article>
 
         <article class="produto">
-            <img src="imagem_produto2.jpg" alt="Produto 2">
+            <img src="imagens/camisateste.webp" alt="Produto 1">
+            <h2>Produto 1</h2>
+            <p>Descrição do Produto 1.</p>
+            <span class="preco">R$49,99</span>
+            <button onclick="comprarProduto()">Comprar</button>
+        </article>
+
+        <article class="produto">
+            <img src="imagens/sapatoteste.jpg" alt="Produto 2">
+            <h2>Produto 2</h2>
+            <p>Descrição do Produto 2.</p>
+            <span class="preco">R$29,99</span>
+            <button onclick="comprarProduto()">Comprar</button>
+        </article>
+
+        <article class="produto">
+            <img src="imagens/sapatoteste.jpg" alt="Produto 2">
+            <h2>Produto 2</h2>
+            <p>Descrição do Produto 2.</p>
+            <span class="preco">R$29,99</span>
+            <button onclick="comprarProduto()">Comprar</button>
+        </article>
+
+        <article class="produto">
+            <img src="imagens/camisateste.webp" alt="Produto 1">
+            <h2>Produto 1</h2>
+            <p>Descrição do Produto 1.</p>
+            <span class="preco">R$49,99</span>
+            <button onclick="comprarProduto()">Comprar</button>
+        </article>
+
+        <article class="produto">
+            <img src="imagens/camisateste.webp" alt="Produto 1">
+            <h2>Produto 1</h2>
+            <p>Descrição do Produto 1.</p>
+            <span class="preco">R$49,99</span>
+            <button onclick="comprarProduto()">Comprar</button>
+        </article>
+
+        <article class="produto">
+            <img src="imagens/sapatoteste.jpg" alt="Produto 2">
+            <h2>Produto 2</h2>
+            <p>Descrição do Produto 2.</p>
+            <span class="preco">R$29,99</span>
+            <button onclick="comprarProduto()">Comprar</button>
+        </article>
+
+        <article class="produto">
+            <img src="imagens/sapatoteste.jpg" alt="Produto 2">
             <h2>Produto 2</h2>
             <p>Descrição do Produto 2.</p>
             <span class="preco">R$29,99</span>
@@ -126,11 +98,31 @@
         <p>Identificação PIX: Eudes Santa Brigida de Souza - Caixa Economica Federal</p>
     </div>
 
+    
+
     <footer>
-        <p>&copy; 2024 Loja Hérois da Fé. Todos os direitos reservados.</p>
+        <p>&copy; 2024 @AmomReis/Loja Hérois da Fé. Todos os direitos reservados. </p>
     </footer>
 
     <script>
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" //referência jQuery
+        
+            $(document).ready(function() {
+        $('#produtos-container').on('touchstart', function(event) {
+        var xClick = event.originalEvent.touches[0].pageX;
+        $(this).one('touchmove', function(event) {
+        var xMove = event.originalEvent.touches[0].pageX;
+        if(Math.floor(xClick - xMove) > 5) {
+            $(this).scrollLeft($(this).scrollLeft() + 200); // Altere 200 para a largura do produto
+        }
+        else if(Math.floor(xClick - xMove) < -5) {
+            $(this).scrollLeft($(this).scrollLeft() - 200); // Altere 200 para a largura do produto
+        }
+        });
+        event.preventDefault();
+    });
+    });
+
 
 function comprarProduto() {
     var informacoesContato = document.getElementById("informacoesContato");
